@@ -1,0 +1,5 @@
+# file: .htaccess
+# descrição: arquivo que vai direcionar todos os acessos para a pasta /public
+RewriteEngine on
+RewriteRule    (.*) public/$1 [L]
+# ##RewriteRule    ^$ public/    [L]
