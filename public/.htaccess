@@ -1,2 +1,4 @@
 RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
 RewriteRule !\.(js|ico|txt|gif|jpg|png|css|doc|log|pdf|rtf|odt|xls)$ index.php
