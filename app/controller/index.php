@@ -1,11 +1,6 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"] . "app/engines/router.php");
-$router = new router;
-/*
-[REQUEST_METHOD]
-[REQUEST_URI]
-*/
-
+	//include($_SERVER["DOCUMENT_ROOT"] . "app/engines/router.php");
+	//$router = new router;
 	$url = $_SERVER["REQUEST_URI"];
 	$p = explode("/", $url);
 	$p[1] ? $p[1] : $p[1] = "default";
